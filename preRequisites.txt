@@ -1,0 +1,58 @@
+Python compatible version is 3.12 
+Install Python and make sure we have the path in environment variables 
+
+Tensorflow --- needs below
+CUDA Toolkit Cuda compilation tools, release 12.1
+https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
+cuDNN 9.5.1 Downloads
+https://developer.nvidia.com/cudnn-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
+
+
+Hgging Face 
+check for rustup-init for huggingface transformers ..........
+I intalled Visual Studio full KIT
+
+Other Lib in the project : 
+
+pandas
+numpy
+requests
+huggingface-hub
+transformers
+datasets
+numba
+tensorflow
+torch
+torchvision
+torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+
+--- check list post installations 
+
+python --verision 
+nvcc --version 
+nvidia-smi 
+python -c "import tensorflow as tf; print(tf.__version__)"
+python -c "import numba; print(numba.__version__)"
+import tensorflow as tf
+print("GPU Available:", tf.test.is_gpu_available())
+print("GPU Devices:", tf.config.list_physical_devices('GPU'))
+
+Here’s an organized checklist for your commands with brief descriptions, formatted as a table:
+
+| **Command**                                           | **Description**                                                                 |
+|-------------------------------------------------------|---------------------------------------------------------------------------------|
+| `python --version`                                    | Check the version of Python installed on your system.                          |
+| `nvcc --version`                                      | Verify the installed CUDA Toolkit version.                                      |
+| `nvidia-smi`                                          | Display NVIDIA driver details and GPU status.                                   |
+| `python -c "import tensorflow as tf; print(tf.__version__)"` | Check if TensorFlow is installed and show its version.                          |
+| `python -c "import numba; print(numba.__version__)"`  | Verify if Numba is installed and display its version.                           |
+| Python code:                                           | Run this code to check GPU availability and list physical GPU devices:          |
+| ```python                                             |                                                                                 |
+| import tensorflow as tf                               |                                                                                 |
+| print("GPU Available:", tf.test.is_gpu_available())   |                                                                                 |
+| print("GPU Devices:", tf.config.list_physical_devices('GPU')) |                                                                                 |
+
+---
+
+This checklist can be saved into a file if needed or directly used as a reference. Let me know how you’d like to proceed!
