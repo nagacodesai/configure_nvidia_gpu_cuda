@@ -34,3 +34,7 @@ Goto all folders in directory and copy them inside bin for Cuda
 conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
 
 ![alt text](image-1.png)
+
+## Credits
+Credit to Boktiar Ahmed Bappy - I referred his articles and learned this. 
+https://youtu.be/nATRPPZ5dGE 
